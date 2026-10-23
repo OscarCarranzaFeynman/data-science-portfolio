@@ -23,11 +23,25 @@ The simulated individual observations are right-skewed, while the averages becom
 
 [View the project repository](https://github.com/OscarCarranzaFeynman/data-science-project) · [Read the analysis script](https://github.com/OscarCarranzaFeynman/data-science-project/blob/main/analysis.py)
 
-**Project status:** Analysis completed locally; portfolio publication and genuine classmate feedback pending. Status will be updated only after verification.
+**Project status:** Publicly published on GitHub Pages. Both figures and the project/code links were checked on 23 October 2026. Genuine classmate feedback and a revision responding to that feedback remain pending.
 
-## Next improvement
+## Reading the result
 
-Ask a classmate to identify the research question, the main finding and the limitation, then make and commit one documented improvement based on their actual feedback.
+Each plotted sample mean averages a new independent sample. The standard error measures how much those means vary; it is different from the spread of individual observations.
+
+| Sample size | Empirical standard error | Formula: 10 / √n |
+| --- | ---: | ---: |
+| 5 | 4.507 | 4.472 |
+| 20 | 2.250 | 2.236 |
+| 100 | 1.001 | 1.000 |
+
+Moving from 5 to 100 observations makes each sample 20 times larger and reduces the theoretical standard error by about 4.47 times. This concerns precision under the stated assumptions; it does not prove that the estimate is unbiased.
+
+## Review and next improvement
+
+**Self-review, 23 October 2026:** A reader could confuse the spread of observations with uncertainty in a mean. I added the explanation and numerical comparison above to make that distinction easier to check. This is a self-review, not classmate feedback.
+
+The remaining peer-review step is to ask a classmate to identify the research question, main finding and limitation, then make and commit one documented improvement based on their actual feedback.
 
 ## AI declaration
 
